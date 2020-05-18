@@ -195,7 +195,7 @@ class Timer extends Component {
 
 export default class App extends Component {
 
-  createTwoButtonAlert = () => (
+  createAlert = () => (
     Alert.alert (
       	"Warning",
       	"Do You Wanna Break Things?",
@@ -208,7 +208,7 @@ export default class App extends Component {
 
     render() {
         return <Timer
-                generateAlert = {() => this.createTwoButtonAlert()}
+                generateAlert = {() => this.createAlert()}
                 />
     }
 }
